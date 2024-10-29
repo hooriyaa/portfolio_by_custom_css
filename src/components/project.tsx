@@ -16,7 +16,7 @@ const Project = () => {
         <div
           className="container"
           data-aos="zoom-in-up"
-          data-aos-duration="1000"
+          data-aos-duration="2000"
         >
           <div className="header">
             <h1 className="title">

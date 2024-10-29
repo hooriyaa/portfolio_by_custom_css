@@ -4,7 +4,6 @@ import Link from "next/link";
 import React from "react";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 
-
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -15,9 +14,7 @@ const Navbar = () => {
             <a className="title-link">
               <span className="brand-name">
                 Hooriya
-                <span className="brand-surname">
-                  Fareed
-                </span>
+                <span className="brand-surname">Fareed</span>
               </span>
             </a>
 

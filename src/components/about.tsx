@@ -9,7 +9,7 @@ const About = () => {
       <section className="about-section">
         <div
           data-aos="zoom-in-right"
-          data-aos-duration="1000"
+         data-aos-duration="2000"
           className="about-container"
         >
           <div className="about-image-wrapper">

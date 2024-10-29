@@ -16,7 +16,7 @@ const Skills = () => {
       <section className="skills-section">
         <div
           data-aos="zoom-in"
-          data-aos-duration="1000"
+          data-aos-duration="2000"
           className="skills-container"
         >
           <div className="skills-header">
