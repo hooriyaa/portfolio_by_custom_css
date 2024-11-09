@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import styles from "./HamburgerMenu.module.css"; // Optional: for custom styling
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,30 +11,34 @@ const HamburgerMenu = () => {
   };
 
   return (
-    <div className={styles.hamburgerMenu}>
-      <button onClick={toggleMenu} className={styles.menuButton}>
+    <div className="hamburgerMenu">
+      <button onClick={toggleMenu} className="menuButton">
         {isOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
       </button>
 
+     
       {isOpen && (
-        <div className={styles.menuLinks}>
-          <div className={styles.sheetHeader}>
-            <h1 className={styles.sheetTitle}>Hooriya</h1>
+        <div className="menuLinks">
+          {/* Header section with title */}
+          <div className="sheetHeader">
+            <h1 className="sheetTitle">Hooriya</h1>
           </div>
-          <div className={styles.navLinks}>
-            <Link href="/" className={styles.navItem} onClick={toggleMenu}>
+          
+          {/* Navigation links */}
+          <div className="navLinks">
+            <Link href="/" className="navItem" onClick={toggleMenu}>
               Home
             </Link>
-            <Link href="#About" className={styles.navItem} onClick={toggleMenu}>
+            <Link href="#About" className="navItem" onClick={toggleMenu}>
               About
             </Link>
-            <Link href="#Skills" className={styles.navItem} onClick={toggleMenu}>
+            <Link href="#Skills" className="navItem" onClick={toggleMenu}>
               Skills
             </Link>
-            <Link href="#Project" className={styles.navItem} onClick={toggleMenu}>
+            <Link href="#Projects" className="navItem" onClick={toggleMenu}>
               Projects
             </Link>
-            <Link href="#Contact" className={styles.navItem} onClick={toggleMenu}>
+            <Link href="#Contact" className="navItem" onClick={toggleMenu}>
               Contact
             </Link>
           </div>

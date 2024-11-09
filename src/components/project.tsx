@@ -11,7 +11,7 @@ import React from "react";
 
 const Project = () => {
   return (
-    <div id="Project">
+    <div id="Projects">
       <section className="body-font">
         <div
           className="container"
