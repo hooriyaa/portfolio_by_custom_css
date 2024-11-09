@@ -1,8 +1,8 @@
 "use client";
-import { SheetDemo } from "@/components/menu";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineCloudDownload } from "react-icons/ai";
+import HamburgerMenu from "./hamburger";
 
 const Navbar = () => {
   return (
@@ -20,7 +20,7 @@ const Navbar = () => {
 
             {/* Hamburger Menu for Small Screens */}
             <div className="mobile-menu">
-              <SheetDemo />
+              <HamburgerMenu />
             </div>
           </div>
 
